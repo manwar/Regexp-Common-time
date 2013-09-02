@@ -1,0 +1,23 @@
+Build.PL
+Changes
+Makefile.PL
+MANIFEST
+MANIFEST.SKIP
+README
+SIGNATURE
+lib/Regexp/Common/time.pm
+t/0-signature.t
+t/1-load.t
+t/american.t
+t/dmy.t
+t/doc.t
+t/hms.t
+t/mail.t
+t/mail-strict.t
+t/mdy.t
+t/strftime.t
+t/tf.t
+t/ymd.t
+t/zone.t
+META.yml
+SIGNATURE    Added here by Module::Build

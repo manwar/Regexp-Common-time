@@ -1,0 +1,20 @@
+---
+name: Regexp-Common-time
+version: 0.04
+author:
+  - 'Eric J. Roode <eroode@barrack.com>'
+abstract: Date and time regexps.
+license: unrestricted
+requires:
+  POSIX: 0
+  Regexp::Common: 0
+build_requires:
+  Test::More: 0.40
+provides:
+  Regexp::Common::time:
+    file: lib/Regexp/Common/time.pm
+    version: 0.04
+generated_by: Module::Build version 0.280801
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2

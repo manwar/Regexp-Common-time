@@ -1,0 +1,15 @@
+\.tar\.gz$
+\bCVS\b
+^Build$
+^Build.bat$
+^Regexp-Common-time-[\d.]+/
+^Makefile$
+^Makefile.old$
+^\.cvsignore$
+^_build/
+^blib/
+^blibdirs
+^cover_db/
+^pm_to_blib
+^pod.*tmp$
+~$
