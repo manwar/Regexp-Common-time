@@ -9,7 +9,7 @@ BEGIN
     eval
     {
         require I18N::Langinfo;
-        I18N::Langinfo->import qw(langinfo MON_1 ABMON_1 MON_2 ABMON_2 MON_3 ABMON_3 MON_4 ABMON_4 MON_5 ABMON_5 MON_6 ABMON_6 MON_7 ABMON_7 MON_8 ABMON_8 MON_9 ABMON_9 MON_10 ABMON_10 MON_11 ABMON_11 MON_12 ABMON_12);
+        I18N::Langinfo->import(qw(langinfo MON_1 ABMON_1 MON_2 ABMON_2 MON_3 ABMON_3 MON_4 ABMON_4 MON_5 ABMON_5 MON_6 ABMON_6 MON_7 ABMON_7 MON_8 ABMON_8 MON_9 ABMON_9 MON_10 ABMON_10 MON_11 ABMON_11 MON_12 ABMON_12));
         ($Jan, $Feb, $Mar, $Apr, $May, $Jun, $Jul, $Aug, $Sep, $Oct, $Nov, $Dec)
             = map langinfo($_), (ABMON_1(), ABMON_2(), ABMON_3(), ABMON_4(), ABMON_5(), ABMON_6(), ABMON_7(), ABMON_8(), ABMON_9(), ABMON_10(), ABMON_11(), ABMON_12());
         ($January, $February, $March, $April, $MayFull, $June, $July, $August, $September, $October, $November, $December)

@@ -22,7 +22,7 @@ my ($November, $Thu);
 eval
 {
     require I18N::Langinfo;
-    I18N::Langinfo->import qw(langinfo MON_11 ABDAY_5);
+    I18N::Langinfo->import(qw(langinfo MON_11 ABDAY_5));
     ($November, $Thu) = map langinfo($_), (MON_11(), ABDAY_5());
 };
 if ($@)
