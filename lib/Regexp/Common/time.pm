@@ -1,7 +1,3 @@
-=for gpg
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
-
 =head1 NAME
 
 Regexp::Common::time - Date and time regexps.
@@ -1424,14 +1420,3 @@ endeavor to improve the software.
 
 =cut
 
-=begin gpg
-
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.9 (Cygwin)
-
-iEYEARECAAYFAkg+1soACgkQwoSYc5qQVqoYRQCffGBoTopPnSbhpbNer2Zz/yXQ
-zoAAnR2X0tzw4+5AVKBb3PpbnuJ5EcT5
-=murM
------END PGP SIGNATURE-----
-
-=end gpg
