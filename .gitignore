@@ -8,3 +8,6 @@ _build/
 MANIFEST
 *.bak
 *.swp
+META.json
+META.yml
+Regexp-Common-time-*
