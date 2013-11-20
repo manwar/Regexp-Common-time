@@ -22,7 +22,7 @@ my $builder = Module::Build->new(
      'Regexp::Common'  =>  0,
      'POSIX'           =>  0,
     },
-    sign => 1,
+    sign => 0,
     add_to_cleanup      => [ 'Regexp-Common-time-*' ],
 );
 
