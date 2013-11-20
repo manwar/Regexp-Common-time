@@ -1,17 +1,29 @@
-use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
+use strict;
+use warnings;
+
+use ExtUtils::MakeMaker 6.5503;
 WriteMakefile(
     NAME              => 'Regexp::Common::time',
     VERSION_FROM      => 'lib/Regexp/Common/time.pm', # finds $VERSION
-    PREREQ_PM         =>
-    {
+    LICENSE           => 'unrestricted',
+    BUILD_REQUIRES    => {
      'Test::More'     =>  '0.40',
+    },
+    PREREQ_PM         => {
      'Regexp::Common' =>  0,
      'POSIX'          =>  0,
     },
     PL_FILES          => {},
-    ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM  => 'lib/Regexp/Common/time.pm', # retrieve abstract from module
-       AUTHOR         => 'eroode <eroode@barrack.com>') : ()),
+    ABSTRACT_FROM     => 'lib/Regexp/Common/time.pm',
+    AUTHOR            => 'Eric J. Roode <eroode@barrack.com>',
+    META_MERGE        => {
+      "meta-spec" => { version => 2 },
+      resources => {
+        repository => {
+          type => 'git',
+          url => 'git://github.com/szabgab/Regexp-Common-time.git',
+          web => 'https://github.com/szabgab/Regexp-Common-time',
+       },
+     },
+   },
 );

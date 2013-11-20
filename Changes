@@ -17,3 +17,6 @@ Revision history for Perl extension Regexp::Common::time.
 0.05  20 Nov 2013
       - Fix test RT #87476
 
+0.06
+      - Remove Build.PL and keep only Makefile.PL 
+      - Add resources
