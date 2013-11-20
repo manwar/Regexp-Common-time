@@ -13,3 +13,7 @@ Revision history for Perl extension Regexp::Common::time.
 0.04  29 May 2008
       - Possible fix for Taiwanese locale test failures.
         Thanks to CPAN tester "imacat".
+
+0.05  20 Nov 2013
+      - Fix test RT #87476
+

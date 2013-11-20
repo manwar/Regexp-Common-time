@@ -4,13 +4,13 @@ Regexp::Common::time - Date and time regexps.
 
 =head1 VERSION
 
-This is version 0.04 of Regexp::Common::time, May 29, 2008.
+This is version 0.05 of Regexp::Common::time, Nov 20, 2013.
 
 =cut
 
 use strict;
 package Regexp::Common::time;
-$Regexp::Common::time::VERSION = '0.04';
+$Regexp::Common::time::VERSION = '0.05';
 use Regexp::Common qw(pattern);
 use POSIX;
 
