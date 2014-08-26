@@ -1,9 +1,9 @@
 Revision history for Perl module Regexp::Common::time.
 
-0.06
+0.06 2014-08-26
 
     - Remove Build.PL and keep only Makefile.PL 
-    - Add resources
+    - Add resources to META files.
 
 0.05 2013-11-20
 

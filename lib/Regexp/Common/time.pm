@@ -2,15 +2,11 @@
 
 Regexp::Common::time - Date and time regexps.
 
-=head1 VERSION
-
-This is version 0.05 of Regexp::Common::time, Nov 20, 2013.
-
 =cut
 
 use strict;
 package Regexp::Common::time;
-$Regexp::Common::time::VERSION = '0.05';
+$Regexp::Common::time::VERSION = '0.06';
 use Regexp::Common qw(pattern);
 use POSIX;
 

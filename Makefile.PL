@@ -4,7 +4,7 @@ use warnings;
 use ExtUtils::MakeMaker 6.5503;
 WriteMakefile(
     NAME              => 'Regexp::Common::time',
-    VERSION_FROM      => 'lib/Regexp/Common/time.pm', # finds $VERSION
+    VERSION_FROM      => 'lib/Regexp/Common/time.pm',
     LICENSE           => 'unrestricted',
     BUILD_REQUIRES    => {
      'Test::More'     =>  '0.40',
