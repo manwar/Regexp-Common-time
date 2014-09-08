@@ -17,3 +17,5 @@
 ^MYMETA\.json$
 \.git
 .bak$
+.swp
+.travis.yml
