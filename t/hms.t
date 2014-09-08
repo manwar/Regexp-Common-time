@@ -1,4 +1,6 @@
-use vars qw(@match $num_tests);
+use strict;
+use warnings;
+my (@match, $num_tests);
 
 BEGIN
 {
@@ -64,14 +66,11 @@ BEGIN
 
     # Run two tests per match, plus two additional per expected success
     $num_tests = 2 * scalar(@match)  +  2 * $to_succeed;
-
-    # Plus one for the 'use_ok' call
-    $num_tests += 1;
 }
 
 use Test::More tests => $num_tests;
 
-use_ok('Regexp::Common', 'time');
+use Regexp::Common 'time';
 
 foreach my $match (@match)
 {

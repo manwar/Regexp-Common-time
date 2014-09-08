@@ -1,4 +1,7 @@
-use Test::More tests => 109;
+use strict;
+use warnings;
+
+use Test::More tests => 108;
 
 sub begins_with
 {
@@ -12,7 +15,7 @@ sub begins_with
     return $ok;
 }
 
-use_ok('Regexp::Common', 'time');
+use Regexp::Common 'time';
 
 # Time zone tests
 
