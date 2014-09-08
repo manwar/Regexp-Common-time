@@ -590,6 +590,18 @@ BEGIN
 
 use Test::More tests => $num_tests;
 
+diag $January;
+diag $February;
+diag $March;
+diag $April;
+diag $MayFull;
+diag $June;
+diag $July;
+diag $August;
+diag $September;
+diag $October;
+diag $November;
+diag $December;
 use Regexp::Common 'time';
 
 foreach my $match (@match)
