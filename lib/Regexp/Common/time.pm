@@ -5,8 +5,10 @@ Regexp::Common::time - Date and time regexps.
 =cut
 
 use strict;
+use warnings;
+
 package Regexp::Common::time;
-$Regexp::Common::time::VERSION = '0.06';
+$Regexp::Common::time::VERSION = '0.07';
 use Regexp::Common qw(pattern);
 use POSIX;
 
