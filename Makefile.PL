@@ -8,6 +8,7 @@ WriteMakefile(
     LICENSE           => 'unrestricted',
     BUILD_REQUIRES    => {
      'Test::More'     =>  '0.40',
+     'Modern::Perl'   =>  '0',
     },
     PREREQ_PM         => {
      'Regexp::Common' =>  0,
