@@ -11,7 +11,6 @@ SKIP_OUT: {
         die "Unspported locale(en_US.UTF-8)" unless defined $loc_us;
         $loc_orig = $loc_us;
     }
-    say $loc_orig;
 
 my (@match, $num_tests);
 
