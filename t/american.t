@@ -2,6 +2,14 @@ use strict;
 use warnings;
 
 use Modern::Perl;
+foreach (@INC) {
+        print $_."\n";
+}
+
+foreach (keys %INC) {
+        print $_." => ".$INC{$_}."\n";
+}
+
 use POSIX qw(setlocale LC_CTYPE);
 
 SKIP_OUT: {
