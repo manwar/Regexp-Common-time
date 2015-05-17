@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 
+use utf8;
 use 5.010_000;
 
 my (@match, $num_tests);
