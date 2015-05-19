@@ -1,16 +1,7 @@
 use strict;
 use warnings;
 
-use Modern::Perl;
-use POSIX qw(setlocale LC_CTYPE);
-
-SKIP_OUT: {
-    my $loc_orig = setlocale(LC_CTYPE);
-    if ( !defined $loc_orig || $loc_orig eq 'C' ) {
-        my $loc_us = setlocale( LC_CTYPE, 'en_US.UTF-8' );
-        die "Unspported locale(en_US.UTF-8)" unless defined $loc_us;
-        $loc_orig = $loc_us;
-    }
+use feature 'unicode_strings';
 
 my (@match, $num_tests);
 
@@ -180,4 +171,3 @@ foreach my $match (@match)
     }
 }
 
-}
