@@ -1389,6 +1389,11 @@ weekday names.
 
 L<Test::More> is required for the test suite.
 
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
 =head1 AUTHOR / COPYRIGHT
 
 Copyright (c) 2005-2008 by Eric J. Roode, ROODE I<-at-> cpan I<-dot-> org
