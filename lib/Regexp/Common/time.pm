@@ -747,11 +747,11 @@ pattern name => ['time', 'iso'],
     qq/(?k:/,
     qq/(?=\\d)/,     # Expect a digit
     qq/(?:/,         # Begin optional date portion
-        qq/(?k:$master{yr4})/,   $m2middle,   qq/(?k:$master{dy2})/,
+        qq/(?k:$master{yr4})/, qq/(?:-)(?k:$master{mo2})(?:-)/, qq/(?k:$master{dy2})/,
     qq/)?/,          # End optional date portion
     $dt_sep,
     qq/(?:/,         # Begin optional time portion
-        qq/(?k:$master{hr2})/,  $min2middle,  qq/(?k:$master{sc2})/,
+        qq/(?k:$master{hr2})/, qq/(?::)(?k:$master{mi2})(?::)/, qq/(?k:$master{sc2})/,
     qq/)?)/;         # End optional time portion
 
 pattern name => ['time', 'mail'],
