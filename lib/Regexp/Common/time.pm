@@ -751,7 +751,7 @@ pattern name => ['time', 'iso'],
     qq/)?/,          # End optional date portion
     $dt_sep,
     qq/(?:/,         # Begin optional time portion
-        qq/(?k:$master{hr2})/, qq/(?::)(?k:$master{mi2})(?::)/, qq/(?k:$master{sc2})/,
+        qq/(?k:$master{hr2})/, qq/(?::)(?k:$master{mi2})(?::)/, qq/(?k:$master{sc2}(?:\.\\d+)?)/,
     qq/)?)/;         # End optional time portion
 
 pattern name => ['time', 'mail'],
