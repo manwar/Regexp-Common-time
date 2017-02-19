@@ -752,7 +752,9 @@ pattern name => ['time', 'iso'],
     $dt_sep,
     qq/(?:/,         # Begin optional time portion
         qq/(?k:$master{hr2})/, qq/(?::)(?k:$master{mi2})(?::)/, qq/(?k:$master{sc2}(?:\.\\d+)?)/,
-    qq/)?)/;         # End optional time portion
+    qq/)?/,          # End optional time portion
+    qq/(?k:$master{tz})?/, # Optional time zone portion
+    qq/)/;
 
 pattern name => ['time', 'mail'],
     create => join '',
