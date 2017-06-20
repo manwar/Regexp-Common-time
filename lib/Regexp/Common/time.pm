@@ -14,15 +14,8 @@ use Regexp::Common qw(pattern);
 sub _croak { require Carp; goto &Carp::croak}
 
 my $can_locale;
-my $can_posix;
 BEGIN
 {
-    eval
-    {
-        $can_posix = 0;
-        require POSIX;
-        $can_posix = 1;
-    };
     eval
     {
         $can_locale = 0;
@@ -479,7 +472,7 @@ sub _setup_locale
 {
     # Do nothing if locale has not changed since we set it up
     my $current_locale;
-    $current_locale = $can_posix?  POSIX::setlocale(POSIX::LC_TIME())  :  q{};
+    $current_locale = POSIX::setlocale(POSIX::LC_TIME());
     $current_locale = q{} if  !defined $current_locale;
 
     # No changes needed
