@@ -14,6 +14,7 @@ WriteMakefile(
     },
     ABSTRACT_FROM     => 'lib/Regexp/Common/time.pm',
     AUTHOR            => 'Eric J. Roode <eroode@barrack.com>',
+    MIN_PERL_VERSION  => '5.6.0',
     META_MERGE        => {
       "meta-spec" => { version => 2 },
       resources => {
