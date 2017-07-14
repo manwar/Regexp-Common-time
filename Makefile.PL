@@ -14,6 +14,7 @@ WriteMakefile(
     },
     ABSTRACT_FROM     => 'lib/Regexp/Common/time.pm',
     AUTHOR            => 'Eric J. Roode <eroode@barrack.com>',
+    dist              => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean             => { FILES => 'Regexp-Common-time-*' },
     META_MERGE        => {
       "meta-spec" => { version => 2 },
