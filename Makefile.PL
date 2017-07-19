@@ -18,6 +18,9 @@ WriteMakefile(
     clean             => { FILES => 'Regexp-Common-time-*' },
     META_MERGE        => {
       "meta-spec" => { version => 2 },
+      provides    => {
+          'Regexp::Common::time' => { file => 'lib/Regexp/Common/time.pm', version => '0.12' },
+      },
       resources => {
         repository => {
           type => 'git',
