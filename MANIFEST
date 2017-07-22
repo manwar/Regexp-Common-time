@@ -16,3 +16,5 @@ t/strftime.t
 t/tf.t
 t/ymd.t
 t/zone.t
+t/meta-json.t
+t/meta-yml.t
