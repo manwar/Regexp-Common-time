@@ -9,6 +9,7 @@ WriteMakefile(
     MIN_PERL_VERSION  => 5.006,
     BUILD_REQUIRES    => {
      'Test::More'     =>  '0.40',
+     'Modern::Perl'   =>  '0',
     },
     PREREQ_PM         => {
      'Regexp::Common' =>  0,
