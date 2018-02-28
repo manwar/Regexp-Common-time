@@ -21,7 +21,7 @@ WriteMakefile(
     META_MERGE        => {
       "meta-spec" => { version => 2 },
       provides    => {
-          'Regexp::Common::time' => { file => 'lib/Regexp/Common/time.pm', version => '0.15' },
+          'Regexp::Common::time' => { file => 'lib/Regexp/Common/time.pm', version => '0.16' },
       },
       resources => {
         repository => {
